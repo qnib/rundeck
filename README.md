@@ -51,6 +51,30 @@ To build clean:
 
     make clean
 
+Drone CI
+======
+
+Download drone-ci and start a local build.
+
+```
+$ drone exec 
+
+[DRONE] starting job #1
+$ ./gradlew assemble
+Downloading https://services.gradle.org/distributions/gradle-1.12-bin.zip
+*snip*
+:rundeck-storage:rundeck-storage-filesys:assemble UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 9 mins 19.155 secs
+[DRONE] finished job #1
+[DRONE] exit code 0
+[DRONE] job #1 passed
+[DRONE] build passed
+$
+```
+
 Installation
 ======
 
